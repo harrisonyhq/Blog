@@ -1,2 +1,2 @@
-# test
-## This is a README File
+# At the very beginning
+## This is my personal blog documenting some insights and discoveries during development.
