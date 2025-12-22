@@ -78,3 +78,6 @@ void broadcast_coalesced(
 ```
 
 由C++代码可知，该方法首先遍历所有的tensor，将其按照大小和不同设备等分成桶中的不同的组，组成buffer size大小的buffer，再遍历桶，以最大2个的广播列表将其分组的广播出去。该方法的优点是灵活性，支持tensor list的广播，并且不要求形状，设备一致；但是缺点也很明显，遍历桶，组成buffer，再逐个广播会带来一定的开销。
+
+## 参考
+https://www.cnblogs.com/rossiXYZ/p/15584032.html
