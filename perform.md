@@ -1,14 +1,3 @@
-| Model            | Platform| TP | Input length | Concurrency | Broadcast | Odirect| TTFT   |
-| --------------- | -------- | -- | -------- | ------ | ---- | -------------- | ------ |
-| DeepSeek-V2-Lite | CUDA     | 4  | 4K       | 50     | False   | False             | 463 ms |
-| DeepSeek-V2-Lite | CUDA     | 4  | 4K       | 50     | True   | False             | 458 ms |
-| DeepSeek-V2-Lite | CUDA     | 4  | 4K       | 50     | False   | True             |  479 ms |
-| DeepSeek-V2-Lite | CUDA     | 4  | 4K       | 50     | True   | True             | 454 ms |
-| DeepSeek-V2-Lite | Ascend    | 4  | 4K       | 50     | False   | False             | 463 ms |
-| DeepSeek-V2-Lite | Ascend    | 4  | 4K       | 50     | True   | False             | 458 ms |
-| DeepSeek-V2-Lite | Ascend    | 4  | 4K       | 50     | False   | True             |  479 ms |
-| DeepSeek-V2-Lite | Ascend    | 4  | 4K       | 50     | True   | True             | 454 ms |
-
 # NUMA, Shm，PCIe与NVlink
 
 ## NUMA (Non Uniform Memory Access)
