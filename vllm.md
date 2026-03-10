@@ -65,3 +65,31 @@ def maybe_save_kv_layer_to_connector(
     connector.save_kv_layer(layer_name, kv_cache_layer,
                             attn_metadata[layer_name])
 ```
+
+## Worker Init
+
+vllm中初始化worker的过程如下：
+
+engine_core初始化：
+![alt text](./images/image.png)
+
+初始化model executor：
+![alt text](./images/image-1.png)
+
+multiproc executor循环world size初始化worker进程：
+![alt text](./images/image-2.png)
+
+进入worker main：
+![alt text](./images/image-3.png)
+
+初始化worker进程：
+![alt text](./images/image-4.png)
+
+worker进程初始化device：
+![alt text](./images/image-5.png)
+
+进入gpu worker初始化分布式环境：
+![alt text](./images/image-6.png)
+
+初始化kv connector：
+![alt text](./images/image-7.png)
